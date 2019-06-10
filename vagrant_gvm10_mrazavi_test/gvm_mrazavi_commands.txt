@@ -1,4 +1,4 @@
-# https://launchpad.net/~mrazavi/+archive/ubuntu/gvm
+# Run these commands on GVM host to continue installation: 
 
 sudo apt-get update
 sudo add-apt-repository ppa:mrazavi/gvm -y
@@ -8,20 +8,7 @@ sudo greenbone-scapdata-sync
 sudo greenbone-certdata-sync
 sudo systemctl restart gsad
 
-
-
--------
-
-
-https://localhost:4000
-
-admin/admin
-
-
-vagrant reload
-
-
-
-systemctl status gvmd # manager
-systemctl status openvas-scanner # scanner
-systemctl status gsad # web ui
+# After installation
+# GSA Web GUI Url: https://localhost:4000
+# GSA username/password: admin/admin
+# Read more: https://launchpad.net/~mrazavi/+archive/ubuntu/gvm
